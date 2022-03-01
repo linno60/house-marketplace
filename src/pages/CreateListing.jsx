@@ -164,6 +164,7 @@ function CreateListing() {
             return
         })
 
+        // Save listings in firestore
         const formDataCopy = {
             ...formData,
             imageUrls,
