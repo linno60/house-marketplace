@@ -25,7 +25,7 @@ function Contact() {
         }
 
         getLandlord()
-    }, [params.landlord])
+    }, [params.landlordId])
 
     const onChange = (e) => setMessage(e.target.value)
 

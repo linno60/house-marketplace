@@ -9,7 +9,6 @@ import { getAuth } from 'firebase/auth'
 import { db } from '../firebase.config'
 import Spinner from '../components/Spinner'
 import shareIcon from '../assets/svg/shareIcon.svg'
-import { parsePath } from 'history'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 function Listing() {
