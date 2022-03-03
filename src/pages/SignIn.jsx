@@ -45,52 +45,52 @@ function SignIn() {
 
     return (
         <>
-            <div className="pageContainer">
+            <div className='pageContainer'>
                 <header>
-                    <p className="pageHeader">Welcome Back!</p>
+                    <p className='pageHeader'>Welcome Back!</p>
                 </header>
 
                 <form onSubmit={onSubmit}>
                     <input
-                        type="email"
-                        className="emailInput"
-                        placeholder="Email"
-                        id="email"
+                        type='email'
+                        className='emailInput'
+                        placeholder='Email'
+                        id='email'
                         value={email}
                         onChange={onChange}
                     />
 
-                    <div className="passwordInputDiv">
+                    <div className='passwordInputDiv'>
                         <input
                             type={showPassword ? 'text' : 'password'}
-                            className="passwordInput"
-                            placeholder="Password"
-                            id="password"
+                            className='passwordInput'
+                            placeholder='Password'
+                            id='password'
                             value={password}
                             onChange={onChange}
                         />
 
                         <img
                             src={visibilityIcon}
-                            alt="show password"
-                            className="showPassword"
+                            alt='show password'
+                            className='showPassword'
                             onClick={() =>
                                 setShowPassword((prevState) => !prevState)
                             }
                         />
                     </div>
 
-                    <Link to="/forgot-password" className="forgotPasswordlink">
+                    <Link to='/forgot-password' className='forgotPasswordlink'>
                         Forgot Password
                     </Link>
 
-                    <div className="signInBar">
-                        <p className="signInText">Sign In</p>
-                        <button className="signInButton">
+                    <div className='signInBar'>
+                        <p className='signInText'>Sign In</p>
+                        <button className='signInButton'>
                             <ArrowRightIcon
-                                fill="#ffffff"
-                                width="34px"
-                                height="34px"
+                                fill='#ffffff'
+                                width='34px'
+                                height='34px'
                             />
                         </button>
                     </div>
@@ -98,7 +98,7 @@ function SignIn() {
 
                 <OAuth />
 
-                <Link to="/sign-up" className="registerLink">
+                <Link to='/sign-up' className='registerLink'>
                     Sign Up Instead
                 </Link>
             </div>

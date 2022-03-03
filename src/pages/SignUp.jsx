@@ -62,60 +62,60 @@ function SignUp() {
 
     return (
         <>
-            <div className="pageContainer">
+            <div className='pageContainer'>
                 <header>
-                    <p className="pageHeader">Welcome Back!</p>
+                    <p className='pageHeader'>Welcome Back!</p>
                 </header>
 
                 <form onSubmit={onSubmit}>
                     <input
-                        type="text"
-                        className="nameInput"
-                        placeholder="Name"
-                        id="name"
+                        type='text'
+                        className='nameInput'
+                        placeholder='Name'
+                        id='name'
                         value={name}
                         onChange={onChange}
                     />
                     <input
-                        type="email"
-                        className="emailInput"
-                        placeholder="Email"
-                        id="email"
+                        type='email'
+                        className='emailInput'
+                        placeholder='Email'
+                        id='email'
                         value={email}
                         onChange={onChange}
                     />
 
-                    <div className="passwordInputDiv">
+                    <div className='passwordInputDiv'>
                         <input
                             type={showPassword ? 'text' : 'password'}
-                            className="passwordInput"
-                            placeholder="Password"
-                            id="password"
+                            className='passwordInput'
+                            placeholder='Password'
+                            id='password'
                             value={password}
                             onChange={onChange}
                         />
 
                         <img
                             src={visibilityIcon}
-                            alt="show password"
-                            className="showPassword"
+                            alt='show password'
+                            className='showPassword'
                             onClick={() =>
                                 setShowPassword((prevState) => !prevState)
                             }
                         />
                     </div>
 
-                    <Link to="/forgot-password" className="forgotPasswordlink">
+                    <Link to='/forgot-password' className='forgotPasswordlink'>
                         Forgot Password
                     </Link>
 
-                    <div className="signUpBar">
-                        <p className="signUpText">Sign In</p>
-                        <button className="signUpButton">
+                    <div className='signUpBar'>
+                        <p className='signUpText'>Sign In</p>
+                        <button className='signUpButton'>
                             <ArrowRightIcon
-                                fill="#ffffff"
-                                width="34px"
-                                height="34px"
+                                fill='#ffffff'
+                                width='34px'
+                                height='34px'
                             />
                         </button>
                     </div>
@@ -123,7 +123,7 @@ function SignUp() {
 
                 <OAuth />
 
-                <Link to="/sign-in" className="registerLink">
+                <Link to='/sign-in' className='registerLink'>
                     Sign In Instead
                 </Link>
             </div>
